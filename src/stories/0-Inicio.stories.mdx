@@ -1,0 +1,30 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import GreenTest from './images/GreenTest.png'
+import StoryDiff from './images/StoryDiff.png'
+import Box from '../components/Box';
+
+<Meta title="Consignas|Inicio" />
+
+# Consignas
+
+Storybook es un entorno para construir componentes con React.
+
+Este proyecto además fue configurado para que puedas crear componentes y testearlos visualmente.
+
+## ¿Cómo funciona?
+
+Te vamos a decir cómo se tiene que ver cada componente en cada consigna.
+Creá cada componente dentro de `src/components` con el nombre y estilos que te indicamos.
+
+## Correr los tests
+Para correr los tests tenés que tener el proyecto corriendo con `npm run storybook` y en otra terminal correr el comando `npm test`.
+
+Si todo salió bien, vas a ver los tests en verde:
+
+<img src={GreenTest} />
+
+Si tu componente tiene algún error visual, vas a ver las diferencias dentro de la carpeta `src/tests/__image_snapshots__/__diff_output__` de esta manera:
+
+<img src={StoryDiff} />
+
+
